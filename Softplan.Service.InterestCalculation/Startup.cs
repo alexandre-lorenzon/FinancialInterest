@@ -45,7 +45,7 @@ namespace Softplan.Service.InterestCalculation
             }
 
             app.UseMiddleware<SoftplanErrorHandlerMiddleware>();
-            app.UseMvc();
+            //app.UseMvc();
 
         }
     }

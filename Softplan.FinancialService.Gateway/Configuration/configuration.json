@@ -1,0 +1,58 @@
+{
+  "ReRoutes": [
+    //Interest rate api config
+    {
+      "DownstreamPathTemplate": "/api/v1/interestrate/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 54597
+        }
+      ],
+      "UpstreamPathTemplate": "/api/taxaJuros",
+      "UpstreamHttpMethod": [
+        "GET"
+      ],
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "PeriodTimespan": 1,
+        "Limit": 1
+      }
+    },
+    //Interest calculation api config
+    {
+      "DownstreamPathTemplate": "/api/v1/interestcalculation/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 59554
+        }
+      ],
+      "UpstreamPathTemplate": "/api/calculaJuros",
+      "UpstreamHttpMethod": [
+        "GET"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/showmethecode/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 59554
+        }
+      ],
+      "UpstreamPathTemplate": "/api/showmethecode",
+      "UpstreamHttpMethod": [
+        "GET"
+      ]
+    }
+  ],
+  "GlobalConfiguration": {
+
+  }
+}
