@@ -2,53 +2,68 @@
   "ReRoutes": [
     //Interest rate api config
     {
-      "DownstreamPathTemplate": "/api/v1/interestrate/",
+      "DownstreamPathTemplate": "api/v1/interestrate/",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": 54597
+          "Host": "http://interestrate-api.azurewebsites.net/",
+          "Port": 80
         }
       ],
       "UpstreamPathTemplate": "/api/taxaJuros",
       "UpstreamHttpMethod": [
         "GET"
       ],
-      "RateLimitOptions": {
-        "ClientWhitelist": [],
-        "EnableRateLimiting": true,
-        "Period": "1s",
-        "PeriodTimespan": 1,
-        "Limit": 1
-      }
+      "SwaggerKey": "interest-rate"
+    },
+    {
+      "Key": "interest-rate",
+      "Config": [
+        {
+          "Name": "Interest Rate API",
+          "Version": "v1",
+          "Url": "http://interestrate-api.azurewebsites.net/swagger/v1/swagger.json"
+        }
+      ]
     },
     //Interest calculation api config
     {
-      "DownstreamPathTemplate": "/api/v1/interestcalculation/",
+      "DownstreamPathTemplate": "api/v1/interestcalculation/",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": 59554
+          "Host": "http://interestcalculation-api.azurewebsites.net/",
+          "Port": 80
         }
       ],
       "UpstreamPathTemplate": "/api/calculaJuros",
       "UpstreamHttpMethod": [
         "GET"
-      ]
-    },
-    {
-      "DownstreamPathTemplate": "/api/v1/showmethecode/",
-      "DownstreamScheme": "http",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "localhost",
-          "Port": 59554
-        }
       ],
-      "UpstreamPathTemplate": "/api/showmethecode",
-      "UpstreamHttpMethod": [
-        "GET"
+      "SwaggerKey": "interest-calculation"
+    },
+    //{
+    //  "DownstreamPathTemplate": "/api/v1/showmethecode/",
+    //  "DownstreamScheme": "http",
+    //  "DownstreamHostAndPorts": [
+    //    {
+    //      "Host": "http://interestcalculation-api.azurewebsites.net/",
+    //      "Port": 80
+    //    }
+    //  ],
+    //  "UpstreamPathTemplate": "/api/showmethecode",
+    //  "UpstreamHttpMethod": [
+    //    "GET"
+    //  ]
+    //},
+    {
+      "Key": "interest-calculation",
+      "Config": [
+        {
+          "Name": "Interest Calculation API",
+          "Version": "v1",
+          "Url": "http://interestcalculation-api.azurewebsites.net/swagger/v1/swagger.json"
+        }
       ]
     }
   ],

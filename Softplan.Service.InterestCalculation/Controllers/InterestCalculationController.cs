@@ -14,10 +14,15 @@ namespace Softplan.Service.InterestCalculation.Controllers
 
         public InterestCalculationController(IInterestRateService interestRateService) => _interestRateService = interestRateService;
 
+        /// <summary>
+        /// Endpoint para efetuar cálculo de juros compostos
+        /// </summary>
+        /// <param name="valorInicial">Valor aplicado</param>
+        /// <param name="meses">Tempo que o valor inicial ficará aplicado</param>
+        /// <returns>Montante acumulado no período</returns>
         [HttpGet, Route("v1/[controller]")]
         [ProducesResponseType(typeof(decimal), (int)HttpStatusCode.OK)]
-        [ProducesResponseType((int)HttpStatusCode.BadRequest)]
-        public async Task<ActionResult<decimal>> Get([FromQuery] decimal valorInicial, int meses) 
+        public async Task<ActionResult<string>> Get([FromQuery] decimal valorInicial, int meses) 
         {
             var interestRate = await _interestRateService.GetAsync();
 

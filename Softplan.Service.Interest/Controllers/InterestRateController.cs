@@ -12,9 +12,12 @@ namespace Softplan.Service.Interest.Controllers
 
         public InterestRateController(IInterestRateRepository repository) => _repository = repository;
 
+        /// <summary>
+        /// Endpoint que retorna a taxa de juros
+        /// </summary>
+        /// <returns>Retorna a taxa de juros que está sendo praticada</returns>
         [HttpGet, Route("v1/[controller]")]
         [ProducesResponseType(typeof(decimal), (int)HttpStatusCode.OK)]
-        [ProducesResponseType((int)HttpStatusCode.BadRequest)]
         public ActionResult<decimal> Get() => _repository.Get();
     }
 }
