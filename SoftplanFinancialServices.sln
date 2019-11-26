@@ -1,0 +1,82 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29424.173
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Softplan.Service.InterestRate", "Softplan.Service.Interest\Softplan.Service.InterestRate.csproj", "{3EA6BCA0-C629-4BBC-88BF-6D7EA34A9185}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Softplan.Service.InterestCalculation", "Softplan.Service.InterestCalculation\Softplan.Service.InterestCalculation.csproj", "{12E6C351-8626-4EEF-B1A9-A20507CC1B40}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Softplan.FinancialService.Gateway", "Softplan.FinancialService.Gateway\Softplan.FinancialService.Gateway.csproj", "{7C2D7135-C2F9-41BB-842D-97705CA20234}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Softplan-Service-InterestRate", "Softplan-Service-InterestRate", "{740223AC-969D-4E90-95EC-9159EC9C989A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Softplan-Service-InterestCalculation", "Softplan-Service-InterestCalculation", "{98D2DF59-2DE8-4993-9D5C-8289CEBE9DC1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Softplan-Gateway", "Softplan-Gateway", "{5ED43394-B8E1-429D-A543-5BDADD793365}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F03177DB-4F8A-4B52-AC91-51CE154E907F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{077413BF-3BF9-483D-B3BD-DCC6D021B9D8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7669595B-FD19-4B8B-BDA2-EE4ACF8B89C3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{A05BEC90-C5E4-4E60-9650-EBAAFE5054E9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0E8854E6-0C0E-4450-A24F-5267078F779E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Softplan-Commom", "Softplan-Commom", "{FD22FD68-90DB-4E98-BFF1-1F123160538C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0C647A52-3BC2-4685-82E3-AF423B5569DB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Softplan.Financial.Commom", "Softplan.Financial.Commom\Softplan.Financial.Commom.csproj", "{1D375641-6298-417E-90FF-1E65F5F9ED44}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Softplan.Service.InterestCalculation.Test", "Softplan.Service.InterestCalculation.Test\Softplan.Service.InterestCalculation.Test.csproj", "{8D95A8D1-A1CE-4833-A87D-2B8A74F74AD8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3EA6BCA0-C629-4BBC-88BF-6D7EA34A9185}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EA6BCA0-C629-4BBC-88BF-6D7EA34A9185}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EA6BCA0-C629-4BBC-88BF-6D7EA34A9185}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EA6BCA0-C629-4BBC-88BF-6D7EA34A9185}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12E6C351-8626-4EEF-B1A9-A20507CC1B40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12E6C351-8626-4EEF-B1A9-A20507CC1B40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12E6C351-8626-4EEF-B1A9-A20507CC1B40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12E6C351-8626-4EEF-B1A9-A20507CC1B40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C2D7135-C2F9-41BB-842D-97705CA20234}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C2D7135-C2F9-41BB-842D-97705CA20234}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C2D7135-C2F9-41BB-842D-97705CA20234}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C2D7135-C2F9-41BB-842D-97705CA20234}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D375641-6298-417E-90FF-1E65F5F9ED44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D375641-6298-417E-90FF-1E65F5F9ED44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D375641-6298-417E-90FF-1E65F5F9ED44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D375641-6298-417E-90FF-1E65F5F9ED44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D95A8D1-A1CE-4833-A87D-2B8A74F74AD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D95A8D1-A1CE-4833-A87D-2B8A74F74AD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D95A8D1-A1CE-4833-A87D-2B8A74F74AD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D95A8D1-A1CE-4833-A87D-2B8A74F74AD8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3EA6BCA0-C629-4BBC-88BF-6D7EA34A9185} = {0E8854E6-0C0E-4450-A24F-5267078F779E}
+		{12E6C351-8626-4EEF-B1A9-A20507CC1B40} = {7669595B-FD19-4B8B-BDA2-EE4ACF8B89C3}
+		{7C2D7135-C2F9-41BB-842D-97705CA20234} = {F03177DB-4F8A-4B52-AC91-51CE154E907F}
+		{F03177DB-4F8A-4B52-AC91-51CE154E907F} = {5ED43394-B8E1-429D-A543-5BDADD793365}
+		{077413BF-3BF9-483D-B3BD-DCC6D021B9D8} = {5ED43394-B8E1-429D-A543-5BDADD793365}
+		{7669595B-FD19-4B8B-BDA2-EE4ACF8B89C3} = {98D2DF59-2DE8-4993-9D5C-8289CEBE9DC1}
+		{A05BEC90-C5E4-4E60-9650-EBAAFE5054E9} = {98D2DF59-2DE8-4993-9D5C-8289CEBE9DC1}
+		{0E8854E6-0C0E-4450-A24F-5267078F779E} = {740223AC-969D-4E90-95EC-9159EC9C989A}
+		{0C647A52-3BC2-4685-82E3-AF423B5569DB} = {FD22FD68-90DB-4E98-BFF1-1F123160538C}
+		{1D375641-6298-417E-90FF-1E65F5F9ED44} = {0C647A52-3BC2-4685-82E3-AF423B5569DB}
+		{8D95A8D1-A1CE-4833-A87D-2B8A74F74AD8} = {A05BEC90-C5E4-4E60-9650-EBAAFE5054E9}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D968ADB1-BB9C-4372-91F4-F919D992A834}
+	EndGlobalSection
+EndGlobal
